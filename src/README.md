@@ -1,1 +1,0 @@
-Fitxers solució
