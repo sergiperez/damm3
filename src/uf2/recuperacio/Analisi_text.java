@@ -1,3 +1,4 @@
+package uf2.recuperacio;
 public class Analisi_text {
     
     public static void main(String[] args) {
