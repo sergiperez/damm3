@@ -1,3 +1,4 @@
+package uf2.recuperacio;
 public class Travessa {
 	static final int maxPartits=15;
 	public static void main(String[] args) {

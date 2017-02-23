@@ -1,3 +1,4 @@
+package uf2.recuperacio;
 public class Comptar_lletra_ADN {
 	
 	public static void main(String[] args) {

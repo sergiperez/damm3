@@ -1,3 +1,4 @@
+package uf3.activitat1;
 import java.io.File;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class Files1 {
 		File f = new File("C:\\Users\\sergi.perez\\Desktop\\Reals.txt");
 		try{
 			Scanner lector = new Scanner(f);
-			//Llegir a línia a línia l'arxiu
+			//Llegir a lï¿½nia a lï¿½nia l'arxiu
 			double max=0;
 			while(lector.hasNextDouble()){
 				double n = lector.nextDouble();
@@ -16,7 +17,7 @@ public class Files1 {
 					max=n;
 				}
 			}
-			System.out.println("El màxim és "+max);
+			System.out.println("El mï¿½xim ï¿½s "+max);
 			lector.close();
 		}
 		catch(Exception e){
