@@ -25,6 +25,12 @@ public class Travessa {
 		for(String signe : travessa){
 			System.out.println(signe);
 		}
+		
+		int[] estadistiques = stats(travessa);
+		
+		System.out.println("Hi ha "+estadistiques[0]+" uns");
+		System.out.println("Hi ha "+estadistiques[1]+" equis");
+		System.out.println("Hi ha "+estadistiques[2]+" dosos");
 	}
 	
 	
@@ -69,5 +75,23 @@ public class Travessa {
 		}
 	}
 	
+	private static int[] stats(String[] travessa){
+		int contX=0;
+		int cont1=0;
+		int cont2=0;
+		
+		for(String s : travessa){
+			if (s.equals("1")) cont1++;
+			if (s.equals("2")) cont2++;
+			if (s.equals("X")) contX++;
+		}
+		
+		int[] stats = new int[3];
+		stats[0]=cont1;
+		stats[1]=contX;
+		stats[2]=cont2;
+		
+		return stats;
+	}
 	
 }
