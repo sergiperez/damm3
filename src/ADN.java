@@ -58,7 +58,7 @@ public class ADN {
 	}
 	
 	/**
-	 * Funció que donat un array cerca la seqüència 'G','A'
+	 * Funció que donat un array cerca la seqüència 'G','A' 
 	 * @return el nombre de cops apareix la seqüència
 	 */
 	private static int copsPurina(String[] sequenciaADN){
