@@ -1,3 +1,5 @@
+package uf2.recuperacio;
+
 public class ADN {
 	
 	public static void main(String[] args) {
