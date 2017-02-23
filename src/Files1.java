@@ -11,9 +11,9 @@ public class Files1 {
 			//Llegir a línia a línia l'arxiu
 			double max=0;
 			while(lector.hasNextDouble()){
-				//double n = lector.nextDouble();
-				if (max < lector.nextDouble()){
-					max=lector.nextDouble();
+				double n = lector.nextDouble();
+				if (max < n){
+					max=n;
 				}
 			}
 			System.out.println("El màxim és "+max);
