@@ -1,28 +1,21 @@
 package uf3.activitat1;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class Files1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		File f = new File("C:\\Users\\sergi.perez\\Desktop\\Reals.txt");
-		try{
-			Scanner lector = new Scanner(f);
-			//Llegir a l�nia a l�nia l'arxiu
-			double max=0;
-			while(lector.hasNextDouble()){
-				double n = lector.nextDouble();
-				if (max < n){
-					max=n;
-				}
-			}
-			System.out.println("El m�xim �s "+max);
-			lector.close();
-		}
-		catch(Exception e){
-			System.out.println(e);
-		}
+		File f = new File("Reals.txt");
+		FileWriter fw = new FileWriter(f);
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write("PRova");
+		bw.close();
 	}
 
 }
